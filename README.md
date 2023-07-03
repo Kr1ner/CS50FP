@@ -1,4 +1,4 @@
-# Mark.it
+# Mark.It
 ## Programming Languages Used:
 - Python(Flask)
 - ReactJS

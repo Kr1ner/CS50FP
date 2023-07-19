@@ -1,9 +1,9 @@
 import NavBar from './NavBar.jsx'
 function App() {
   return (
-    <>
-    <NavBar/>
-    </>
+    <div id='homedisplay' className='w-full h-screen flex justify-center'>
+      <NavBar/>
+    </div>
   )
 }
 

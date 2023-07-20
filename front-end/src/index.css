@@ -20,3 +20,8 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #D196FF;
 }
+
+@font-face {
+    font-family: 'Helvetica-Rounded';
+    src: url('./assets/Helvetica-Rounded.otf');
+}

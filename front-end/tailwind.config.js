@@ -8,6 +8,8 @@ export default {
     extend: {
       backgroundImage:{
         'home-background':"url('./src/assets/background.svg')"
+      },fontFamily:{
+        main:['Helvetica-Rounded']
       }
     },
   },

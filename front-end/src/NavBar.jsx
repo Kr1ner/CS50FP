@@ -1,15 +1,15 @@
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import logo from './assets/logo.svg'
 
 export default function NavBar(){
     return(
         <nav className='flex h-fit w-3/5 flex-row justify-between mt-[2vh]' id="navbar">
-            <Link to={'/'}><img style={{"filter":"drop-shadow(2px 3px 2px rgb(143 96 169 / 0.7))"}} className='h-[7vh]' src={logo} alt="Mark.It Logo" /></Link>
-            <div className='w-1/2 flex flex-row justify-between place-items-center'>
-                <Link to={'/'}>HOME</Link>
-                <Link to={'/personal'}>PERSONAL</Link>
-                <Link to={'/signin'}>SIGN IN</Link>
-                <Link to={'/register'}>JOIN NOW</Link>
+            <NavLink to={'/'}><img style={{"filter":"drop-shadow(2px 3px 2px rgb(143 96 169 / 0.7))"}} className='h-[7vh]' src={logo} alt="Mark.It Logo" /></NavLink>
+            <div className='w-1/2 flex flex-row justify-between place-items-center font-main'>
+                <NavLink className='text-[#D196FF] text-[0.9vw]' to={'/'}>HOME</NavLink>
+                <NavLink className='text-[#D196FF] text-[0.9vw]' to={'/personal'}>PERSONAL</NavLink>
+                <NavLink className='text-[#D196FF] text-[0.9vw]' to={'/signin'}>SIGN IN</NavLink>
+                <NavLink style={{"filter":"drop-shadow(2px 3px 4px rgb(143 96 169 / 0.4))"}} className='inline-block text-center bg-[#8F60A9] px-5 py-2 rounded-md text-[#E5E5E5] text-[0.9vw]' to={'/register'}>JOIN NOW</NavLink>
             </div>
         </nav>
     )

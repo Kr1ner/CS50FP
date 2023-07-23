@@ -8,7 +8,18 @@ const router = createBrowserRouter([
   {
     path: "/",
     element:<App/>,
+    errorElement:<div >SOMETHING WENT WRONG</div>
+  },{
+    path:"/signin",
+    element:<div>login</div>
+  },{
+    path:"/register",
+    element:<div>register</div>
   },
+  {
+    path:"/personal",
+    element:<div>personal</div>
+  }
 ]);
 
 

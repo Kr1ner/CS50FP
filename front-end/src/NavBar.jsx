@@ -3,7 +3,7 @@ import logo from './assets/logo.svg'
 
 export default function NavBar(){
     return(
-        <nav className='flex h-fit w-3/5 flex-row justify-between mt-[2vh]' id="navbar">
+        <nav className='flex h-fit w-3/5 flex-row justify-between ' id="navbar">
             <NavLink to={'/'}><img style={{"filter":"drop-shadow(2px 3px 2px rgb(143 96 169 / 0.7))"}} className='h-[7vh]' src={logo} alt="Mark.It Logo" /></NavLink>
             <div className='w-1/2 flex flex-row justify-between place-items-center font-main'>
                 <NavLink className='text-[#D196FF] text-[0.9vw]' to={'/'}>HOME</NavLink>

@@ -20,8 +20,30 @@ function App() {
             <img src={FloatingBook} alt="logo" />
           </div>
         </header>
-        <img onClick={()=>{window.scrollBy(0,500)}} className='w-5 hover:cursor-pointer' src={msdwn} alt='mousedownicon'></img>
+        <img onClick={()=>{let x=window.innerHeight; window.scrollBy(0,x)}} className='w-5 hover:cursor-pointer' src={msdwn} alt='mousedownicon'></img>
       </div>
+      <section className='w-full h-[50vh] mt-[5vh] flex flex-row items-center justify-center' id='homecards'>
+        <ul className='w-2/3 h-3/4 flex flex-row justify-around' id='cardsholder'>
+          <li style={{"filter":"drop-shadow(10px 18px 5px rgb(239 190 222))"}} className='w-1/4 h-full bg-[#D196FF]/[.4] rounded-[15%]' id='card1'>
+            <div id='imgholder1'></div>
+            <h3>What is Mark.It</h3>
+            <p></p>
+          </li>
+          <li id='card2' className='w-1/4 h-full bg-[#D196FF]/[.4] rounded-[15%]'>
+          <div id='imgholder2'></div>
+
+          </li>
+          <li id='card3' className='w-1/4 h-full bg-[#D196FF]/[.4] rounded-[15%]'>
+          <div id='imgholder3'></div>
+          </li>
+        </ul>
+      </section>
+      <section id='homewhymarkit'>
+
+      </section>
+      <footer>
+
+      </footer>
     </div>
   )
 }

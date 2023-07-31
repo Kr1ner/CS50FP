@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import msdwn from './assets/msdwn.svg';
 function App() {
   return (
-    <div id='home' className='w-full bg-no-repeat bg-home-background bg-contain h-[305vh]'>
+    <div id='home' className='w-full bg-no-repeat bg-home-background bg-cover h-[305vh]'>
       <div id='homedisplay' className='w-full h-screen flex flex-col items-center justify-around'>
         <NavBar/>
         <header className='w-[70%] h-[57vh] flex flex-row items-center place-items-center justify-between'>

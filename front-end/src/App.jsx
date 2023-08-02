@@ -13,7 +13,7 @@ function App() {
             <h5 className='font-secondary text-right text-[#D196FF] font-semibold'>First online website for making your book tracking experience better and many more features combined in one website.</h5>
             <section className='w-full flex flex-row justify-between'>
               <Link style={{"filter":"drop-shadow(2px 3px 4px rgb(143 96 169 / 0.4))"}} className='inline-block text-center bg-[#8F60A9] px-5 py-2 rounded-full text-[#E5E5E5] font-secondary text-[1vw] font-semibold hover:bg-[#D196FF] duration-100' to={'/register'}>START YOUR JOURNEY TODAY</Link>
-              <Link style={{"filter":"drop-shadow(2px 3px 4px rgb(143 96 169 / 0.4))"}} className='inline-block text-center  px-5 py-2 rounded-full text-[#8F60A9] font-secondary text-[1vw] border-2 border-[#8F60A9] font-semibold hover:border-[#D196FF] hover:text-[#D196FF] duration-100' to={'/register'}>START YOUR JOURNEY TODAY</Link>
+              <Link onClick={()=>{var locdiv = document.getElementById("imgholder1");var rect = locdiv.getBoundingClientRect();var x = rect.x; window.scrollTo(0,x)}} style={{"filter":"drop-shadow(2px 3px 4px rgb(143 96 169 / 0.4))"}} className='inline-block text-center  px-5 py-2 rounded-full text-[#8F60A9] font-secondary text-[1vw] border-2 border-[#8F60A9] font-semibold hover:border-[#D196FF] hover:text-[#D196FF] duration-100' to={''}>MORE ABOUT WEBSITE</Link>
             </section>
           </div>
           <div id='homeheaddimg' className='w-[29vw] h-fit'>

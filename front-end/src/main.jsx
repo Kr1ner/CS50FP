@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
+import Login from './Login.jsx'
+import Register from './Register.jsx'
 import './index.css'
 import {createBrowserRouter,RouterProvider} from "react-router-dom";
 
@@ -11,10 +13,10 @@ const router = createBrowserRouter([
     errorElement:<div >SOMETHING WENT WRONG</div>
   },{
     path:"/signin",
-    element:<div>login</div>
+    element:<Login/>
   },{
     path:"/register",
-    element:<div>register</div>
+    element:<Register/>
   },
   {
     path:"/personal",
